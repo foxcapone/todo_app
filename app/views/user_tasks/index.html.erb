@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 
+
 <h1>User Tasks</h1>
 
 <%= link_to 'New User Task', new_user_task_path, remote: true, class: 'btn btn-default' %>
@@ -15,6 +16,9 @@
 </div>
 
 
+<% if @user_tasks.empty? %>
+  <%="Get Busy Motha-fucka!"%>
+<% end %>
 
 
 
